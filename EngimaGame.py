@@ -18,13 +18,13 @@ class EnigmaGame:
     def get_code(self):
         code=[]
         for a in range (self.settings.code_length):    
-            code.append(randint(a=1,b=self.settings.numbers_of_colours))
+            code.append(randint(a=1,b=self.settings.numbers_of_colors))
         return(code)
     
     def get_colors(self):
         colors = []
-        for i in range(self.settings.numbers_of_colours):
-            hue = i / self.settings.numbers_of_colours  
+        for i in range(self.settings.numbers_of_colors):
+            hue = i / self.settings.numbers_of_colors  
             r, g, b = colorsys.hsv_to_rgb(hue, 1, 1)
             r = int(r * 255)
             g = int(g * 255)

@@ -5,4 +5,4 @@ class Settings:
         self.number_of_guesses = 10
         self.mode = "EASY"
         self.code_length = 4
-        self.numbers_of_colours = 8
+        self.numbers_of_colors = 8
